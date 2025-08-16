@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EAGLE BEATS Portfolio</title>
+
+  <!-- Bootstrap & AOS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream: #F5F5F5;
+      --light-gray: #E0E0E0;
+      --medium-gray: #9E9E9E;
+      --dark-gray: #424242;
+      --black: #212121;
+      --accent: #5C6BC0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--black);
+      line-height: 1.6;
+    }
+
+    .hero {
+      background: #212121 center center/cover no-repeat;
+      padding: 140px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .hero .logo {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--light-gray);
+      letter-spacing: 2px;
+      animation: fadeInDown 1.2s ease-in-out;
+    }
+
+    .hero .tagline {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .hero .btn {
+      transition: all 0.3s ease;
+      border-radius: 30px;
+    }
+
+    .hero .btn:hover {
+      background-color: var(--accent);
+      color: white;
+      box-shadow: 0 0 10px var(--accent);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .section-title::after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 4px;
+      background-color: var(--accent);
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .list-group-item {
+      background-color: #f8f9fa;
+      border: none;
+      padding: 10px 16px;
+      font-size: 1rem;
+      color: #333;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .list-group-item:hover {
+      background-color: #e0e0e0;
+    }
+
+    @keyframes fadeInDown {
+      0% {opacity: 0; transform: translateY(-30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      0% {opacity: 0; transform: translateY(30px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+
+<body>
+ <!-- HEADER -->
+<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="index.html">EAGLE BEATS</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-3">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#bio">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-primary" href="photo.html">Graphic Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="video.html">Video Editing</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+  
+  <!-- GALLERY SECTIONS -->
+
+
+  <section class="py-5 bg-light" id="thumbnail">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Thumbnail</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="images/Thumbnail.jpg" alt="Thumbnail" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <p>First impressions are everything — and thumbnails are the heartbeat of that first click. At Eagle Beats, I craft vibrant, story-driven thumbnails that don’t just look good — they spark curiosity and emotion. Whether it’s for YouTube, Instagram Reels, or Shorts, each design is tailored to stop the scroll and boost engagement.</p>
+        <p>Combining bold typography, color psychology, expressive visuals, and brand consistency, I ensure every thumbnail reflects your content’s energy. It's more than a preview — it’s a powerful invitation into your world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="py-5 bg-light" id="poster">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Poster</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <p>Posters are not just designs — they’re bold visual storytellers. Whether it’s for a cultural event, social campaign, product launch, or concert, I create posters that demand attention and leave a lasting impression.</p>
+        <p>Each layout is crafted with purpose — balancing typography, color, and imagery to ignite curiosity and deliver clear messaging. From minimalist elegance to explosive creativity, every poster speaks louder than words, turning walls and screens into moments of impact.</p>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <img src="images/poster.jpg" alt="Poster" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light" id="logo">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Logo</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="images/logo.jpg" alt="Logo" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <p>A logo is more than a symbol — it's the soul of your brand. I design logos that blend strategy with creativity, capturing the essence of who you are in a single, unforgettable mark.</p>
+        <p>From sleek minimalism to expressive abstract forms, every logo is custom-crafted to communicate your vision, values, and voice. Whether you're a startup or an artist, I turn your identity into a timeless visual signature that builds trust and stands out — even in a crowded world.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-5 bg-light" id="calligraphy">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Calligraphy</h2>
+    <div class="row align-items-center">
+      <div class="col-md-6" data-aos="fade-right">
+        <p>Calligraphy is where words meet art — each stroke a dance of ink and emotion. I create hand-lettered pieces that transform simple text into visually poetic expressions, perfect for names, quotes, invitations, and more.</p>
+        <p>Blending tradition with modern style, my calligraphy is crafted with passion and precision — whether it's for a personal gift, a branding detail, or a cultural design. Every letter tells a story. Every curve captures a feeling.</p>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <img src="images/calligraphy.jpg" alt="Calligraphy" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="py-5 bg-light" id="card">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Cards</h2>
+
+    <!-- Invitation Card -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="images/wcard.jpg" alt="Invitation Card" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <p>Every invitation card I design carries the magic of the moment — whether it's a wedding, festive event, or celebration of love. From elegant florals to vibrant cultural motifs, each piece reflects the story of the people behind it.</p>
+        <p>With carefully selected typography, textures, and layouts, I transform emotions into memorable prints that are as unique as the occasion itself. It's not just a card — it’s your first impression, delivered with grace.</p>
+      </div>
+    </div>
+
+    <!-- Visiting Card -->
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2" data-aos="fade-left">
+        <img src="images/Visiting.jpg" alt="Visiting Card" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 order-md-1" data-aos="fade-right">
+        <p>Your visiting card is your handshake in print — and I design it to leave a mark. Whether you're a creative, entrepreneur, or business leader, your card speaks before you do.</p>
+        <p>From sleek minimalism to bold branding, I craft layouts that balance aesthetic appeal with readability. Every design is clean, professional, and made to spark conversations long after the first meet.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="py-5 bg-light" id="Branding">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Branding</h2>
+
+    <!-- Clothly – Oversized T-Shirt Clothing Brand -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6" data-aos="fade-right">
+        <img src="images/Cbrand.jpg" alt="Clothly Branding" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0" data-aos="fade-left">
+        <p><strong>Clothly</strong> isn’t just a clothing brand — it’s an identity for the bold Gen Z generation. Focused on oversized fits and streetwear-inspired designs, the branding reflects rebellion, freedom, and confidence.</p>
+        <p>The logo’s metallic, hanger-inspired look is clean yet edgy — designed to resonate with youth who value both style and self-expression. Every visual detail, from typography to texture, elevates Clothly as a premium streetwear movement born from culture, not trends.</p>
+      </div>
+    </div>
+
+    <!-- GrooveMarathi.in – Marathi Remix Music Platform -->
+    <div class="row align-items-center">
+      <div class="col-md-6 order-md-2" data-aos="fade-left">
+        <img src="images/Mbrand.jpg" alt="GrooveMarathi Branding" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 order-md-1" data-aos="fade-right">
+        <p><strong>GrooveMarathi.in</strong> is where traditional Marathi flavor meets the pulse of modern remixes. The logo’s golden sheen and flowing Devanagari font reflect cultural pride, while the infinity loop in “Groove” represents endless beats and vibes.</p>
+        <p>From social media visuals to DJ drops, the branding brings rich heritage and high-energy beats into one immersive identity. GrooveMarathi isn’t just a music website — it’s a lifestyle space for remix lovers who vibe with culture and sound.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- FOOTER -->
+  <footer class="footer bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div>
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled d-flex gap-3 mb-0">
+          <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="#bio" class="text-white text-decoration-none">About</a></li>
+        </ul>
+      </div>
+      <div class="text-center text-md-end">
+        <p class="mb-1">Email: eaglebeatsadiii@gmail.com</p>
+        <p class="mb-1">Managed By: Eagle_Beats</p>
+        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+          <a href="https://www.instagram.com/eagle_beats_visual" target="_blank">
+            <img src="images/instagram.png" alt="Instagram" width="32" />
+          </a>
+          <a href="https://www.youtube.com/@GrooveMarathiOfficial" target="_blank">
+            <img src="images/youtube.png" alt="YouTube" width="32" />
+          </a>
+          <a href="https://t.me/groovemarathi" target="_blank">
+            <img src="images/telegram.png" alt="Telegram" width="32" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-3">&copy; 2025 Eagle_Beats. All Rights Reserved.</div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      offset: 100,
+      once: true
+    });
+  </script>
+</body>
+</html>

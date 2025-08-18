@@ -115,7 +115,20 @@
       margin-bottom: 2rem;
       position: relative;
     }
-
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 30px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    footer a:hover {
+      color: white;
+    }
     .section-title::after {
       content: '';
       position: absolute;
@@ -177,31 +190,43 @@
 </head>
 
 <body>
-  <!-- HEADER -->
-<header class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+ <!-- HEADER -->
+<header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold text-primary" href="index.html">EAGLE BEATS</a>
+    <a class="navbar-brand fw-bold text-light" href="index.html">EAGLE BEATS</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav gap-3">
         <li class="nav-item">
-          <a class="nav-link" href="index.html#home">Home</a>
+          <a class="nav-link text-light" href="index.html#home">
+            <i class="fas fa-home"></i> Home
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="index.html#bio">About</a>
+          <a class="nav-link text-light" href="video.html">
+            <i class="fas fa-video"></i> Video Editing
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active text-primary" href="photo.html">Graphic Design</a>
+          <a class="nav-link text-light active" href="graphic.html">
+            <i class="fas fa-pencil-ruler"></i> Graphic Design
+          </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="video.html">Video Editing</a>
+          <a class="nav-link text-light" href="webdev.html">
+            <i class="fas fa-code"></i> Web Dev Projects
+          </a>
         </li>
       </ul>
     </div>
   </div>
 </header>
+
+<!-- Font Awesome (for icons) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 
 <!-- SECTION: REEL (3 videos) -->
   <section class="py-5 bg-light" id="reel">
@@ -336,38 +361,25 @@
 </section>
 
 
-  <!-- FOOTER -->
-  <footer class="footer bg-dark text-white py-4">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <div>
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled d-flex gap-3 mb-0">
-          <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
-          <li><a href="#bio" class="text-white text-decoration-none">About</a></li>
-        </ul>
-      </div>
-      <div class="text-center text-md-end">
-        <p class="mb-1">Email: Eagle_Beats@gmail.com</p>
-        <p class="mb-1">Managed By: Eagle_Beats</p>
-        <div class="d-flex justify-content-center justify-content-md-end gap-3">
-          <a href="https://www.linkedin.com/in/aditya-bhandekar-27b849336/" target="_blank">
-            <img src="images/Linkedin.png" alt="linkedin" width="28" />
-          </a>
-          <a href="https://www.instagram.com/eagle_beats_visual" target="_blank">
-            <img src="images/instagram.png" alt="Instagram" width="32" />
-          </a>
-          <a href="https://www.youtube.com/@eaglebeatsvisual32" target="_blank">
-            <img src="images/youtube.png" alt="YouTube" width="32" />
-          </a>
-          <a href="https://t.me/groovemarathi" target="_blank">
-            <img src="images/telegram.png" alt="Telegram" width="32" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-3">&copy; 2025 Eagle_Beats. All Rights Reserved.</div>
-  </footer>
+<!-- FOOTER -->
+<footer class="bg-dark text-light py-4 mt-5">
+  <div class="container text-center">
 
+    <!-- Social Links -->
+    <div class="social-links mb-3">
+      <a href="https://www.linkedin.com/in/aditya-bhandekar-27b849336/" target="_blank" class="text-light mx-2" title="LinkedIn"><i class="fab fa-linkedin fa-lg"></i></a>
+      <a href="https://github.com/adityabhandekar" target="_blank" class="text-light mx-2" title="GitHub"><i class="fab fa-github fa-lg"></i></a>
+      <a href="https://leetcode.com/" target="_blank" class="text-light mx-2" title="LeetCode"><i class="fas fa-code fa-lg"></i></a>
+      <a href="https://www.instagram.com/adiii_bhandekar/" target="_blank" class="text-light mx-2" title="Instagram"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="https://www.youtube.com/@groundmarathi1546" target="_blank" class="text-light mx-2" title="YouTube"><i class="fab fa-youtube fa-lg"></i></a>
+    </div>
+
+   
+
+    <!-- Copyright -->
+    <p class="mb-0">&copy; 2024 Eagle Beats. All rights reserved.</p>
+  </div>
+</footer>
   <!-- AOS Script -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
@@ -379,4 +391,3 @@
   </script>
 </body>
 </html>
-
